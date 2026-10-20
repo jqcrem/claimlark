@@ -175,25 +175,6 @@ a:hover { text-decoration-thickness: 2px; }
 .pill--review { color: var(--brass-700); background: var(--brass-100); }
 .pill--route { color: #f8f3ea; background: var(--plum-700); }
 
-/* Availability tags: what is built, in development, or planned */
-.status {
-  display: inline-flex;
-  align-items: center;
-  padding: 1px 8px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  font-family: var(--sans);
-  font-size: var(--step--2);
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  line-height: 1.6;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.status--proto { color: var(--plum-700); background: var(--plum-100); }
-.status--dev { color: var(--brass-700); border: 1px dashed var(--brass-500); }
-.status--planned { color: var(--ink-muted); border-color: var(--line-strong); }
-
 .tag {
   display: inline-block;
   margin-left: 4px;
@@ -235,8 +216,6 @@ a:hover { text-decoration-thickness: 2px; }
 .lede { max-width: 36em; margin-bottom: var(--s-6); color: var(--ink-muted); font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.2rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--s-3); }
 .hero-note { margin-top: var(--s-4); font-size: var(--step--1); font-weight: 600; }
-.hero-status { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); margin-top: var(--s-3); color: var(--ink-muted); font-size: var(--step--1); }
-.hero-status li { display: inline-flex; align-items: center; gap: var(--s-2); }
 
 /* Channel map (hero illustration): where inquiries start, the intake engine, the firm */
 .channel-map {
@@ -421,7 +400,7 @@ a:hover { text-decoration-thickness: 2px; }
 .mini-firm { padding: var(--s-3); background: var(--paper); border: 1px solid var(--plum-700); border-radius: var(--radius-s); }
 .mini-firm p { font-size: var(--step--1); font-weight: 650; }
 
-/* Founding partner pilot: the page's main conversion */
+/* Founding partners: the page's main conversion */
 .partner-card {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
@@ -484,9 +463,6 @@ a:hover { text-decoration-thickness: 2px; }
   font-size: var(--step--1);
   font-weight: 600;
 }
-.stage-dot { width: 9px; height: 9px; margin-top: 0.42em; border-radius: 50%; flex: none; }
-.stage-dot--live { background: var(--plum-700); box-shadow: 0 0 0 3px var(--plum-100); }
-.stage-dot--forming { background: transparent; border: 2px solid var(--brass-700); }
 
 .panel {
   padding: var(--s-4);
@@ -747,7 +723,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 @media (forced-colors: active) {
-  .pill, .chip, .tag, .status { border: 1px solid CanvasText; }
+  .pill, .chip, .tag { border: 1px solid CanvasText; }
   .rail li::before { border: 1px solid CanvasText; }
 }
 
